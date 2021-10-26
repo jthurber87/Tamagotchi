@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: pixel;
+    font-size: 15px;
+}
+
+@font-face {
+    font-family: pixel;
+    src: url(PokemonGB.ttf);
+}
+
+h3, #currentLevel {
+    font-size: 10px;
+}
+
+body {
+    background-image: url("../assets/classroom-background.jpeg");
+    background-size: cover;
+    height: 110%;
+    display:flex;
+    justify-content: center;
+}
+
+
+.tomagatchi {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+input {
+    width: 155px;
+    height: 25px;
+    margin: 0;
+    position: absolute;
+    /* margin-bottom: 50%; */
+    padding-left: 5px;
+    font-size: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border-style: none;
+}
+
+#playArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 200px;
+    width: 210px;
+    background-color: rgb(85, 85, 60);
+    position: absolute;
+    top: 185px;
+    left: 127px;
+    text-align: center;
+    border: 2px solid rgb(109, 116, 105);
+    border-radius: 15px;
+}
+#exp {
+    width: 100%
+}
+
+label {
+    font-size: 9px;
+    padding: 2px;
+}
+
+meter {
+    width: 60px;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+}
+
+#sans {
+    width: 125px;
+    height: 115px;
+    margin-bottom: 5px;
+}

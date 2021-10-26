@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" charset="utf-8"></script>
+        <script src="./js/app.js" charset="utf-8" defer></script>
+        <title></title>
+    </head>
+    <body>
+        <div class="tomagatchi">
+            <img id = "sprite" src="./assets/tamagotchi.png" alt="tamagotchi" id="tamagotchi">
+            <div id="playArea">
+                <div id="sprite" class="">
+                    <img src="./assets/sans-default.gif" id="sans">
+                </div>
+                <div id='meters' class="">
+                    <h1 id="name"></h1>
+                    <h3 id="level">Level: <span id="currentLevel">1</span>/10</h3>
+                    <meter id="exp" value="6" min="0" max="100" low="99" optimum="100"></meter><br>
+                    <meter class="meter" id="hungry" value="0" min="0" max="100" low="25"></meter>
+                    <meter class="meter" id="sleepy" value="0" min="0" max="100" low="25"></meter>
+                    <meter class="meter" id="bored" value="0" min="0" max="100" low="25"></meter> <br>
+                    <div>
+                    <label for="hungry">Hungry</label>
+                    <label for="sleepy">Sleepy</label>
+                    <label for="bored">Bored</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="audio">
+            <audio id="chirp" controls style="display:none">
+                <source src="./assets/chirp.wav" type="audio/mpeg">
+            </audio>
+            <audio id="levelup" controls style="display:none">
+                <source src="./assets/levelup.wav" type="audio/mpeg">
+            </audio>
+            <audio id="lose" controls style="display:none">
+                <source src="./assets/lose.wav" type="audio/mpeg">
+            </audio>
+            <audio id="too-soon" controls style="display:none">
+                <source src="./assets/too-soon.wav" type="audio/mpeg">
+            </audio>
+            <audio id="win" controls style="display:none">
+                <source src="./assets/win.wav" type="audio/mpeg">
+            </audio>
+        </div>
+    </body>
+</html>
